@@ -6,7 +6,7 @@ import './Result.css';
 const Key = '111a11eac95e3153131322962ac5db5e';
 
 function Result() {
-  const [data, setData] = useState(0);
+  const [data, setData] = useState();
   const city = localStorage.getItem("city");
   const navigate = useNavigate();
 

@@ -1,0 +1,15 @@
+.error {
+    text-align: center;
+}
+
+.error button {
+    margin-top: 10px;
+    display: block;
+    height: 40px;
+    width: 130px;
+    margin: auto;
+    margin-top: 10px;
+    border: 0;
+    color: #ccc;
+    background: #000;
+}

@@ -15,31 +15,3 @@ body {
   align-items: center;
   justify-content: center;
 }
-
-input[type="text"]{
-  display: block;
-  height: 40px;
-  width: 250px;
-  text-align: center;
-}
-
-form {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-}
-
-input[type="submit"] {
-  display: block;
-  height: 40px;
-  width: 100px;
-  margin: auto;
-  margin-top: 10px;
-  border: 0;
-  color: #ccc;
-  background: #000;
-}
-
-.load {
-  text-align: center;
-}

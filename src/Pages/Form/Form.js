@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate} from 'react-router-dom';
-import loading from './img/loading.gif';
+import './Form.css';
 
 const Form = () => {
   const [city, setValue] = React.useState('');
