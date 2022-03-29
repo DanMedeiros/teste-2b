@@ -1,41 +1,31 @@
-import React, { useEffect } from 'react';
-import Result from '../Result/Result';
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
+import loading from './img/loading.gif';
 
 const Form = () => {
+  const [city, setValue] = React.useState('');
+  const navigate = useNavigate();
 
-    const city = '';
-    
   const onChange = e => {
-
     localStorage.setItem('city', e.target.value);
  
+    setValue(e.target.value);
   };
  
   const handleSubmit = e => {
     e.preventDefault();
+    navigate('/result');
   }
 
-
-    const [form, setForm] = ""
-
-    useEffect((form) => {
-        if(localStorage.getItem("city") == ""){
-            <Result />
-        }
-    },[form])
-
+  
 
   return (
-    <>
-        <div>
-          <form onSubmit={handleSubmit}>
-              <input type="text" value={city} onChange={onChange} />
-              <input type="submit" value="Enviar" />
-          </form>
-      </div>
-      <>
-        {form ? form : setForm}</>
-      </>
+    <div>
+      <form onSubmit={handleSubmit}>
+          <input type="text" value={city} onChange={onChange} placeholder="Buscar por cidade" />
+            <input  type="submit" value="Procurar" />
+      </form>
+    </div>
   );
 };
  
